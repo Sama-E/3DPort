@@ -2,7 +2,9 @@ import { Sectional } from '../components/sectional';
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
-// import Map from "./Map";
+import Map from '../components/Map';
+
+
 
 const Container = styled.div`
   width: 100%;
@@ -52,7 +54,7 @@ const TextArea = styled.textarea`
 `;
 
 const Button = styled.button`
-  background-color: #da4ea2;
+  background-color: #DAA3C4;
   color: white;
   border: none;
   font-weight: bold;
@@ -78,10 +80,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_id",
-        "template_id",
+        "service_x4863hs",
+        "template_m4u50yt",
         ref.current,
-        "public_key"
+        "l9p6Rio7bTdfYnet7"
       )
       .then(
         (result) => {
@@ -100,7 +102,7 @@ const Contact = () => {
       <Container>
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>
-            <Title>Contact Us</Title>
+            <Title>Contact Me</Title>
             <Input placeholder="Name" name="name" />
             <Input placeholder="Email" name="email" />
             <TextArea
@@ -114,7 +116,7 @@ const Contact = () => {
           </Form>
         </Left>
         <Right>
-          {/* <Map /> */}
+          <Map />
         </Right>
       </Container>
     </Sectional>
