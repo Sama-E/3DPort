@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   height: 100vh;
   scroll-snap-align:center;
-  width: 1000px;
+  width: 1400px;
   display: flex;
   justify-content: space-between;
 `
