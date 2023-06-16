@@ -1,8 +1,9 @@
 import React from 'react'
+import { Sectional } from '../components/sectional';
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <Sectional>Contact</Sectional>
   )
 }
 

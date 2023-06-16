@@ -1,8 +1,9 @@
 import React from 'react'
+import { Sectional } from '../components/sectional';
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <Sectional>Projects</Sectional>
   )
 }
 
