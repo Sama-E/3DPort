@@ -1,11 +1,13 @@
 
-
 function App() {
 
 
   return (
     <div>
-      Hello!
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
     </div>
   )
 }
