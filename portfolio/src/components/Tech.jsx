@@ -5,33 +5,32 @@ import styled from 'styled-components';
 import BallCanvas from '../components/canvas/Ball';
 
 
-const Container = styled.div`
-  height: 100vh;
-  scroll-snap-align: center;
-  width: 1400px;
-  display: flex;
-  justify-content: space-between;
-`;
+// const Container = styled.div`
+//   height: 100vh;
+//   scroll-snap-align: center;
+//   width: 1400px;
+//   display: flex;
+//   justify-content: space-between;
+// `;
 
 const Teck = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 10px;
+  justify-content: center;
+  gap: 25px;
+  padding: 180px;
 `;
 
 const TeckMap = styled.div`
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
 `
 
 
 
 const Tech = () => {
   return (
-
-      <Container>
         <Teck>
           {technologies.map((technology) =>(
             <TeckMap key={technology.name}>
@@ -39,8 +38,6 @@ const Tech = () => {
             </TeckMap>
           ))}
         </Teck>
-      </Container>
-
   )
 }
 

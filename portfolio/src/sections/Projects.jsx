@@ -7,9 +7,8 @@ import styled from "styled-components";
 
 const data = [
   "Web Design",
-  "Development",
-  "Product Design",
-  "Social Media",
+  "Full Stack",
+  "Blockchain",
 ];
 
 const ProjectSection = styled.div`
@@ -49,6 +48,9 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li`
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
   font-size: 90px;
   font-weight: bold;
   cursor: pointer;

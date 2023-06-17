@@ -3,9 +3,10 @@ import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
+import Tools from "./sections/Tools";
 
 import styled from "styled-components";
-import Tech from "./sections/Tech";
+
 
 
 const Container = styled.div`
@@ -28,10 +29,9 @@ function App() {
       <Navbar />
       <Container>
         <Hero />
-        <About />
+        <Tools />
         <Projects />
         <Contact />
-        <Tech />
       </Container>
     </div>
   )
