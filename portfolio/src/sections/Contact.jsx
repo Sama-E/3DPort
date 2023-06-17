@@ -42,13 +42,13 @@ const Form = styled.form`
 const Input = styled.input`
   padding: 20px;
   background-color: #F4F7FB;
-  border: none;
+  border: 1px solid black;
   border-radius: 5px;
 `;
 
 const TextArea = styled.textarea`
   padding: 20px;
-  border: none;
+  border: 1px solid black
   border-radius: 5px;
   background-color: #F4F7FB;
 `;
