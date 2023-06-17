@@ -5,6 +5,7 @@ import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 
 import styled from "styled-components";
+import Tech from "./sections/Tech";
 
 
 const Container = styled.div`
@@ -30,6 +31,7 @@ function App() {
         <About />
         <Projects />
         <Contact />
+        <Tech />
       </Container>
     </div>
   )

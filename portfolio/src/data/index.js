@@ -1,21 +1,21 @@
-import {
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  threejs,
-} from "../assets/techImages";
+import javascript from "../assets/javascript.png";
+import typescript from "../assets/typescript.png";
+import html from "../assets/html.png";
+import css from "../assets/css.png";
+import reactjs from "../assets/reactjs.png";
+import tailwind from "../assets/tailwind.png";
+import mongodb from "../assets/mongodb.png";
+import git from "../assets/git.png";
+import figma from "../assets/figma.png";
+import docker from "../assets/docker.png";
+import nodejs from "../assets/nodejs.png";
 
 
 const technologies = [
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
   {
     name: "HTML 5",
     icon: html,
@@ -25,10 +25,6 @@ const technologies = [
     icon: css,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
     name: "TypeScript",
     icon: typescript,
   },
@@ -36,10 +32,10 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -53,10 +49,6 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
@@ -68,6 +60,10 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
 ];
 
 export { technologies };
