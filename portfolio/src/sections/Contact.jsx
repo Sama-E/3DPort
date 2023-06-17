@@ -7,7 +7,7 @@ import Map from '../components/Map';
 
 
 const Container = styled.div`
-  width: 100%;
+  width: 1400px;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -64,7 +64,7 @@ const Button = styled.button`
 `;
 
 const Right = styled.div`
-  flex: 1;
+  flex: 2;
 
   @media only screen and (max-width: 768px) {
     display: none;

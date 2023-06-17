@@ -12,9 +12,9 @@ const Map = () => {
     <ComposableMap
       projection="geoAzimuthalEqualArea"
       projectionConfig={{
-        rotate: [92.5, -44.0, 4],
+        rotate: [91, -44.0, 4],
         center: [-5, -4],
-        scale: 1200
+        scale: 1000
       }}
     >
       <Geographies
