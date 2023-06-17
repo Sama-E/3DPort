@@ -2,6 +2,7 @@ import React from 'react';
 import { Sectional } from '../components/sectional';
 import Navbar from '../components/navbar';
 import styled from 'styled-components';
+import EarthCanvas from './../components/canvas/Earth';
 
 const Container = styled.div`
   height: 100vh;
@@ -118,7 +119,7 @@ const Hero = () => {
         </Left>
         <Right>
           {/* 3D model */}
-          <Img src ="./img/moon.png" />
+          <EarthCanvas />
         </Right>
       </Container>
     </Sectional>
