@@ -10,6 +10,13 @@ const Container = styled.div`
   width: 1400px;
   display: flex;
   justify-content: space-evenly;
+
+  @media only screen and (max-width: 768px){
+    width: 100%;
+    flex-direction: column;
+    align-item: center;
+    justify-content: center;
+  }
 `;
 
 const Left = styled.div`
@@ -36,7 +43,9 @@ const Right = styled.div`
   gap: 20px;
 
   @media only screen and (max-width: 768px) {
-    align-items: center;
+    flex: 1;
+    width: 100%;
+    align-item: center;
     text-align: center;
   }
 `;

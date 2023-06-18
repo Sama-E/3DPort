@@ -30,8 +30,8 @@ function App() {
       <Container>
         <Hero />
         <Tools />
-        <Projects />
-        <Contact />
+        {/* <Projects /> */}
+        {/* <Contact /> */}
       </Container>
     </div>
   )

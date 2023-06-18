@@ -5,11 +5,18 @@ import styled from 'styled-components';
 import EarthCanvas from './../components/canvas/Earth';
 
 const Container = styled.div`
-  height: 100vh;
+  height: 100%;
   scroll-snap-align:center;
   width: 1400px;
   display: flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: 768px){
+    width: 100%;
+    flex-direction: column;
+    align-item: center;
+    justify-content: center;
+  }
 `
 const Left = styled.div`
   flex: 2;
@@ -26,8 +33,9 @@ const Left = styled.div`
 const Right = styled.div`
   flex: 3;
   position: relative;
+
   @media only screen and (max-width: 768px) {
-    flex: 1;
+    flex: 2;
     width: 100%;
   }
 `;
@@ -56,7 +64,8 @@ const Subtitle = styled.h2`
 
 const Desc = styled.p`
   font-size: 24px;
-  color: lightgray;
+  color: gray;
+
   @media only screen and (max-width: 768px) {
     padding: 20px;
     text-align: center;
@@ -73,8 +82,7 @@ const Button = styled.button`
   border-radius: 5px;
   cursor: pointer;
 `
-
-const Img = styled.img`
+const EarthContain = styled.div`
   width: 800px;
   height: 600px;
   object-fit: contain;
@@ -83,12 +91,11 @@ const Img = styled.img`
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
   animation: animate 2s infinite ease alternate;
 
   @media only screen and (max-width: 768px) {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
   }
 
   @keyframes animate {
@@ -119,7 +126,9 @@ const Hero = () => {
         </Left>
         <Right>
           {/* 3D model */}
-          <EarthCanvas />
+          <EarthContain>
+            <EarthCanvas />
+          </EarthContain>
         </Right>
       </Container>
     </Sectional>

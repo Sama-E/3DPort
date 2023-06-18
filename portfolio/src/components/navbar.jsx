@@ -8,6 +8,10 @@ const Nav = styled.div`
     &::-webkit-scrollbar{
       display: none;
     }
+
+  @media only screen and (max-width: 768px){
+    width: 100%;
+  }
 `;
 
 const Container = styled.div`
@@ -18,6 +22,10 @@ const Container = styled.div`
   padding: 10px 10px;
   background-color: #ACACAC;
   opacity: 0.65;
+
+  @media only screen and (max-width: 768px){
+    width: 100%;
+  }
 `;
 
 const Links = styled.div`
@@ -46,6 +54,10 @@ const List = styled.ul`
   gap: 50px;
   align-items: center;
   list-style: none;
+
+  @media only screen and (max-width: 768px){
+    display: none;
+  }
 `;
 
 const ListItem = styled.li`
@@ -77,7 +89,6 @@ const Navbar = () => {
           </List>
         </Links>
         <Icons>
-          <Icon src="./img/search.png" />
           <Button>Hire Now</Button>
         </Icons>
       </Container>
