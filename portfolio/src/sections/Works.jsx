@@ -1,6 +1,7 @@
 import { Sectional } from '../components/sectional';
 import React, { useState } from "react";
 import styled from "styled-components";
+import ProjectCard from '../components/ProjectCard';
 // import Development from "./Development";
 // import ProductDesign from "./ProductDesign";
 // import WebDesign from "./WebDesign";
@@ -11,7 +12,7 @@ const data = [
   "Blockchain",
 ];
 
-const ProjectSection = styled.div`
+const WorkSection = styled.div`
   position: relative;
   color: black;
   font-size: 14px;
@@ -35,7 +36,7 @@ const Left = styled.div`
   align-items: center;
 
   @media only screen and (max-width: 768px) {
-    padding: 20px;
+    padding: 50px;
     justify-content: center;
   }
 `;
@@ -90,12 +91,16 @@ const ListItem = styled.li`
 
 const Right = styled.div`
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  items-align: center;
+  padding-top: 10px;
 `;
 
-const Projects = () => {
+const Works = () => {
   return (
     <Sectional>
-      <ProjectSection>
+      <WorkSection>
         <Container>
           <Left>
             <List>
@@ -114,11 +119,12 @@ const Projects = () => {
             ) : (
               <ProductDesign />
             )} */}
+            <ProjectCard />
           </Right>
         </Container>
-      </ProjectSection>
+      </WorkSection>
     </Sectional>
   )
 }
 
-export default Projects;
+export default Works;

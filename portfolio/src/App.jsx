@@ -1,9 +1,8 @@
 import Navbar from "./components/navbar";
 import Hero from "./sections/Hero";
-import About from "./sections/About";
-import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 import Tools from "./sections/Tools";
+import Works from "./sections/Works";
 
 import styled from "styled-components";
 
@@ -30,7 +29,7 @@ function App() {
       <Container>
         <Hero />
         <Tools />
-        <Projects />
+        <Works />
         <Contact />
       </Container>
     </div>

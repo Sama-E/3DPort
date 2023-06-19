@@ -1,17 +1,8 @@
 import React from 'react';
 import { technologies } from '../data/index';
-import { Sectional } from './../components/sectional';
 import styled from 'styled-components';
 import BallCanvas from '../components/canvas/Ball';
 
-
-// const Container = styled.div`
-//   height: 100vh;
-//   scroll-snap-align: center;
-//   width: 1400px;
-//   display: flex;
-//   justify-content: space-between;
-// `;
 
 const Teck = styled.div`
   display: flex;
