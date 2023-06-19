@@ -84,7 +84,7 @@ const Navbar = () => {
           <List>
             <ListItem>Home</ListItem>
             <ListItem>About</ListItem>
-            <ListItem>Projects</ListItem>
+            <ListItem>Works</ListItem>
             <ListItem>Contact</ListItem>
           </List>
         </Links>

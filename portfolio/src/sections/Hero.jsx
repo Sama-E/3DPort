@@ -111,16 +111,18 @@ const Hero = () => {
       <Container>
         <Left>
           <Title>
-            Learn. Live. Grow.
+          Solve. Build. Implement.
           </Title>
           <WhatWeDo>
             <Line src="./img/line.png"/>
             <Subtitle>
-              What we Do
+              Together we forge solutions
             </Subtitle>
           </WhatWeDo>
           <Desc>
-            Enjoy creating delightful, human-centered ditigal experiences.
+            In our world, there are more problems than solutions.
+            Just keep calm and let's solve them by building and implementing our solutions.
+            Let's fix it together.
           </Desc>
             <Button>Learn More</Button>
         </Left>

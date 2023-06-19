@@ -13,19 +13,27 @@ const Container = styled.div`
 
   @media only screen and (max-width: 768px){
     width: 100%;
-    flex-direction: column;
     align-item: center;
     justify-content: center;
+    flex-direction: column-reverse;
+    gap: 80px;
   }
 `;
 
 const Left = styled.div`
   flex: 2;
-
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
 `;
+
+const MyTools = styled.h2`
+  display: none;
+
+@media only screen and (max-width: 768px){
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  align-items: center;
+  color: #da4ea2;
+`
 
 const Title = styled.h1`
   font-size: 64px;
@@ -66,7 +74,7 @@ const Subtitle = styled.h2`
 
 const Desc = styled.p`
   font-size: 24px;
-  color: lightgray;
+  color: gray;
 `;
 
 const Button = styled.button`
@@ -85,19 +93,23 @@ const Tools = () => {
     <Sectional>
       <Container>
         <Left>
+          <MyTools>
+            My Tools:
+          </MyTools>
           <Tech />
         </Left>
         <Right>
-          <Title>Think outside the square space</Title>
+          <Title> Learn. Live. Grow.</Title>      
           <WhatWeDo>
             <Line src="./img/line.png" />
-            <Subtitle>Who we Are</Subtitle>
+            <Subtitle>Tools I like to use</Subtitle>
           </WhatWeDo>
           <Desc>
-            a creative group of designers and developers with a passion for the
-            arts.
+            I am student of life and for life. 
+            I enjoy creating delightful, human-centered ditigal experiences
+            with my tools to create solutions.
           </Desc>
-          <Button>See our works</Button>
+          <Button>See my works</Button>
         </Right>
       </Container>
     </Sectional>
