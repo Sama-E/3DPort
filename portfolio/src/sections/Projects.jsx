@@ -60,7 +60,7 @@ const ListItem = styled.li`
 
   @media only screen and (max-width: 768px) {
     font-size: 24px;
-    color: white;
+    color: gray;
     -webkit-text-stroke: 0px;
   }
 
